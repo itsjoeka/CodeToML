@@ -30,3 +30,13 @@ Claude checkpoints files before every edit.
 - Run `/memory` to eidit it inline
 
 ## Extend tools
+MCP or Model Context Protocols give claude new tools: read our slack, query your database, control your browser/
+- Run `/mcp` to browser and connect servers. You can connect github or slack or mattermost servers
+
+Once connected, tools appear automatically, ask Claude to "check my calendar" or "search our notion" and it just works
+- In the shell: `claude mcp add my-server -- npx some-mcp-pkg` to wire one up without living the terminal
+
+## Automate your workflow
+- Save a prompt to `.claude/skills/deploy/SKILL.md` and it becomes `/deploy`. Type it and claude runs it.
+- Run `/skill` to see what you have
+- Run `/install-github-app` to let Claude review PRs when tagged.
