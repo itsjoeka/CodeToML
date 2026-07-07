@@ -50,4 +50,15 @@ Claude can spawn copies of itself to work in parallel. Ask it to use subagents t
 - Run `/remote-control` to take this session with you and pick up right where you left off on any device.
   - Open the Code tab in the Claude mobile app, or visit claude.ai/code in a browser: Session keeps running on this machine while your other devices act as a remote control
 - Started a session on the web and want it here?
+
+## Dial the model
+- Run `/model` to switch models.
+  - Fable: for the hardest problems
+  - Opus for complex work
+  - Sonnet for most tasks
+  - Haiku for quick questions
+
+Each model trades speed for depth
+- `/effort` controls how long Claude thinks before answering. high for tricky bugs, and low for quick edits. `/fast` also toggles fast mode; faster for some models
+
   - Run `/teleport` to pull it to this terminal with full history
