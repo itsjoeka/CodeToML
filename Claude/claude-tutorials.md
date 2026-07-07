@@ -40,3 +40,14 @@ Once connected, tools appear automatically, ask Claude to "check my calendar" or
 - Save a prompt to `.claude/skills/deploy/SKILL.md` and it becomes `/deploy`. Type it and claude runs it.
 - Run `/skill` to see what you have
 - Run `/install-github-app` to let Claude review PRs when tagged.
+
+## Multiply yourself
+Claude can spawn copies of itself to work in parallel. Ask it to use subagents to perform tasks
+- Define specialized agents in `.claude/agents/` - a test runner, a code reviewer, a docs writer; each with its own tools and instructions. Ask Claude to create or update them for you
+- Run `claude --worktree`
+
+## Code from anywhere
+- Run `/remote-control` to take this session with you and pick up right where you left off on any device.
+  - Open the Code tab in the Claude mobile app, or visit claude.ai/code in a browser: Session keeps running on this machine while your other devices act as a remote control
+- Started a session on the web and want it here?
+  - Run `/teleport` to pull it to this terminal with full history
