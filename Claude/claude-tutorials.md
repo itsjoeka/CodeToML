@@ -11,4 +11,13 @@
   - `auto`: claude decides what is safe. Use this mode for long unattended tasks.
   - `plan`: reearch and propose, never touch files. Use this mode for big refactors you want to review first. 
   - `accept edits`: edit freely, ask for commands
- Run `/permissions` to pre-allow specific commands so Claude stops asking about them
+
+Run `/permissions` to pre-allow specific commands so Claude stops asking about them
+
+## Undo anything
+Claude checkpoints files before every edit.
+- Press Esc Esc (double tap) to open `/rewind` and roll back to any prior state - be it code, conversation, or both
+- `/clear` wipes conversation but keeps files
+- `/branch` forks the conversation to try two approaches
+
+## 
