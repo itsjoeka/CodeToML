@@ -20,4 +20,13 @@ Claude checkpoints files before every edit.
 - `/clear` wipes conversation but keeps files
 - `/branch` forks the conversation to try two approaches
 
-## 
+## Run in the background
+- Add \& to any bash command and it runs in the background, while you keep chatting, Claude will notifiy you when the task is finished
+- Run `/tasks` to see everything in flight
+
+## Teach Claude your rules
+- Drop a `CLAUDE.md` file in your repo and claude reads it at the start of every session. Conventions like: test commands, style rules, do-not-touch directories can be put in there
+- Run `/init` to generate a starter CLAUDE.md from your codebase.
+- Run `/memory` to eidit it inline
+
+## Extend tools
